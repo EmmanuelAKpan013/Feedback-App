@@ -27,7 +27,6 @@ function App() {
     <Router>
       <Header />
       <div className="container">
-        got
         <Routes>
           <Route
             exact
