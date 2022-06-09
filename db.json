@@ -1,0 +1,14 @@
+{
+  "feedback": [
+    {
+      "text": "I love your service",
+      "rating": 9,
+      "id": 1
+    },
+    {
+      "text": "service was cool and professional",
+      "rating": 10,
+      "id": 2
+    }
+  ]
+}

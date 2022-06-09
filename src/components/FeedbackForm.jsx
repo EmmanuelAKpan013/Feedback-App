@@ -4,7 +4,7 @@ import Button from './shared/Button';
 import RatingSelect from './RatingSelect';
 import FeedbackContext from '../context/FeedbackContext';
 
-function FeedbackForm({}) {
+function FeedbackForm() {
   const [text, setText] = useState('');
   const [rating, setRating] = useState();
   const [btnDisabled, setBtnDisabled] = useState(true);
@@ -22,7 +22,7 @@ function FeedbackForm({}) {
   }, [feedbackEdit]);
 
   const handleTextChange = (e) => {
-    if (text === '') {
+    if (!text) {
       setBtnDisabled(true);
       setMessage(null);
     } else if (text !== '' && text.trim().length <= 10) {
